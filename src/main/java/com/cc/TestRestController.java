@@ -13,6 +13,6 @@ public class TestRestController {
     @RequestMapping(value="/test")
     @ResponseBody
     public void  test(String username,HttpServletRequest request,HttpServletResponse response) throws Exception{
-    	response.getWriter().write("hello spring mvc");
+    	response.getWriter().write("spring mvc is hello");
     }
 }
