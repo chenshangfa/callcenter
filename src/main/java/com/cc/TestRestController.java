@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TestRestController {
     @RequestMapping(value="/main")
     public String  test(String username,HttpServletRequest request,HttpServletResponse response) throws Exception{
-    	return "/main/main.jsp";
+    	return "/main/main";
     }
 }
