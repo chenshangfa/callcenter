@@ -13,17 +13,13 @@ public class TestRestController {
     	return "/main/hello.jsp";
     }
     
+    
     @RequestMapping(value="/logout")
     public String  logout(String username,HttpServletRequest request,HttpServletResponse response) throws Exception{
     	return "/main/logout.jsp";
     }
     
-    @RequestMapping(value="/hello")
-    public String  hello(String username,HttpServletRequest request,HttpServletResponse response) throws Exception{
-    	return "/main/hello.jsp";
-    }
-    
-    @RequestMapping(value="/customer")
+    @RequestMapping(value="/getCustomer")
     public String  getCustomer(String username,HttpServletRequest request,HttpServletResponse response) throws Exception{
     	return "/main/customer.jsp";
     }
