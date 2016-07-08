@@ -30,6 +30,7 @@ public class TestRestController {
     public String  bye(String username,HttpServletRequest request,HttpServletResponse response) throws Exception{
     	return "/main/hello.jsp";
     	
+    	
 
     }
 
