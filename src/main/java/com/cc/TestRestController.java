@@ -22,5 +22,9 @@ public class TestRestController {
     public String  getCustomer(String username,HttpServletRequest request,HttpServletResponse response) throws Exception{
     	return "/main/customer.jsp";
     }
+    @RequestMapping(value="/login")
+    public String  login(String username,HttpServletRequest request,HttpServletResponse response) throws Exception{
+    	return "/main/login.jsp";
+    }
     
 }
