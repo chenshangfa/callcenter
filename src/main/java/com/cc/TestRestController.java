@@ -26,5 +26,13 @@ public class TestRestController {
     public String  login(String username,HttpServletRequest request,HttpServletResponse response) throws Exception{
     	return "/main/login.jsp";
     }
+    @RequestMapping(value="/bye")
+    public String  bye(String username,HttpServletRequest request,HttpServletResponse response) throws Exception{
+    	return "/main/login.jsp";
+    }
     
+    @RequestMapping(value="/hello")
+    public String  hello(String username,HttpServletRequest request,HttpServletResponse response) throws Exception{
+    	return "/main/hello.jsp";
+    }
 }
