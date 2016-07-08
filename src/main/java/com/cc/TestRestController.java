@@ -28,7 +28,7 @@ public class TestRestController {
     }
     @RequestMapping(value="/see")
     public String  see(String username,HttpServletRequest request,HttpServletResponse response) throws Exception{
-    	return "/main/login.jsp";
+    	return "/main/see.jsp";
     }
     
    
