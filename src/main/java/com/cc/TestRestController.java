@@ -28,7 +28,7 @@ public class TestRestController {
     }
     @RequestMapping(value="/bye")
     public String  bye(String username,HttpServletRequest request,HttpServletResponse response) throws Exception{
-    	return "/main/bye.jsp";
+    	return "/main/byebye.jsp";
 
     }
 
