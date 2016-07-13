@@ -10,17 +10,17 @@
 <link type="text/css" rel="stylesheet" href="${base }/static/css/bootstrap.min.css">
 <script type="text/javascript" src="${base }/static/js/jquery-3.0.0.min.js"/>
 <script type="text/javascript" src="${base }/static/js/bootstrap.min.js"/>
+<script type="text/javascript" src="${base }/static/js/avalon.js"/>
+<script>
+        var vm = avalon.define({
+            $id: "test",
+            name: "司徒正美"
+        })
+</script>
 <title>首页</title>
 </head>
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 col-md-offset-6">
-				<p style="background-color:red;">
-					bootstrap
-				</p>
-			</div>
-		</div>
-	</div>
+<body ms-controller="test">
+ <input ms-duplex="name">
+    <p>Hello,{{name}}!</p>
 </body>
 </html>
