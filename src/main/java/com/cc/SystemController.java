@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class SystemController {
-    @RequestMapping(value="/main")
+    @RequestMapping(value="/main.do")
     public String  test(String username,HttpServletRequest request,HttpServletResponse response) throws Exception{
     	return "main/main";
     }
